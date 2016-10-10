@@ -1,0 +1,31 @@
+buildscript {
+    ext {
+        kotlinVersion = '1.0.4'
+        androidPluginVersion = '2.2.0'
+        androidSupportVersion = '24.2.1'
+        multidexVersion = '1.0.1'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+        classpath("com.android.tools.build:gradle:${androidPluginVersion}")
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14.1'
+}
