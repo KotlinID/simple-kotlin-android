@@ -4,6 +4,7 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 23
     buildToolsVersion "24.0.3"
+
     defaultConfig {
         applicationId "com.baculsoft.kotlinandroid"
         minSdkVersion 19
