@@ -5,7 +5,7 @@
                                                  android:layout_width="match_parent"
                                                  android:layout_height="match_parent"
                                                  android:background="@color/colorPrimary"
-                                                 tools:context="com.baculsoft.kotlinandroid.MainActivity"
+                                                 tools:context="com.baculsoft.kotlinandroid.views.activities.MainActivity"
                                                  tools:targetApi="LOLLIPOP">
 
     <RelativeLayout
@@ -18,8 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:background="@color/colorAccent"
-            android:minHeight="?attr/actionBarSize"
-            app:elevation="0dip">
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar_main"

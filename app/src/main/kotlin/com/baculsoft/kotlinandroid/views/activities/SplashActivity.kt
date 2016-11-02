@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
         openMainActivity()
     }
 
-    fun openMainActivity() {
+    private fun openMainActivity() {
         val intent: Intent = Intent(applicationContext, MainActivity::class.java)
         startActivity(intent)
         finish()
