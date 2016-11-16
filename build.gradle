@@ -1,8 +1,8 @@
 buildscript {
     ext {
-        kotlinVersion = '1.0.4'
+        kotlinVersion = '1.0.5'
         androidPluginVersion = '2.2.2'
-        androidSupportVersion = '25.0.0'
+        androidSupportVersion = '25.0.1'
         multidexVersion = '1.0.1'
     }
     repositories {
