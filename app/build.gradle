@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "com.baculsoft.kotlinandroid"
@@ -14,10 +14,9 @@ android {
         multiDexEnabled true
     }
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            return void
         }
     }
     lintOptions {
@@ -31,7 +30,14 @@ android {
 }
 
 dependencies {
+    // Default external libs
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Kotlin
     compile("org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}")
+
+    // Android Support
     compile("com.android.support:design:${androidSupportVersion}")
+    compile("com.android.support:appcompat-v7:${androidSupportVersion}")
     compile("com.android.support:multidex:${multidexVersion}")
 }
